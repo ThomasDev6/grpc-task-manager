@@ -9,6 +9,10 @@ jobs:
   test-e2e:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./task-api
+
     services:
       mongodb:
         image: mongo
